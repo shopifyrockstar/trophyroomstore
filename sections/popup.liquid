@@ -1,0 +1,147 @@
+<modal-box id="modal-{{ section.id }}" class="popup" 
+  data-options='{
+    "show": {{ section.settings.newsletter_auto }},
+    "frequency": "{{ section.settings.newsletter_frequent }}",
+    "enabled": {{ section.settings.popup_enable }}
+  }'
+  style="display:none"
+>
+
+  <div class="popup-text" data-content>
+
+    {%- if section.settings.title -%}
+      <span class="h4 popup-title">{{ section.settings.title }}</span>
+    {%- endif -%}
+
+    {%- if section.settings.content -%}
+      <div class="rte">{{ section.settings.content }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.newsletter_enable -%}
+      {%- assign form_id = 'newsletter-form-' | append: section.id -%}
+      {%- render 'newsletter-form', id: form_id, type: 'popup' -%}
+    {%- endif -%}
+
+  </div>
+
+  <button class="popup-close" data-close>
+    <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
+    {%- render 'theme-symbols', icon: 'close' -%}
+  </button>
+
+</modal-box>
+
+<style>
+  {%- if section.settings.popup_txtcolor != 'rgba(0,0,0,0)' -%}
+    {%- liquid
+      assign popup_txtcolor = section.settings.popup_txtcolor
+      assign popup_txt_brightness = popup_txtcolor | color_brightness 
+      if popup_txt_brightness > 150 
+        assign popup_txt_foreground = '#000' 
+      else 
+        assign popup_txt_foreground = '#fff' 
+      endif 
+    -%}
+    #modal-{{ section.id }}, #modal-{{ section.id }} a, #modal-{{ section.id }} input, #modal-{{ section.id }} input::placeholder {
+      color: {{ popup_txtcolor }} !important;
+    }
+    #modal-{{ section.id }} .button {
+      background: {{ popup_txtcolor }} !important;
+      color: {{ popup_txt_foreground }} !important;
+    }
+    .popup-close path {
+      fill: {{ popup_txtcolor }};
+    }
+  {%- endif -%}
+  {%- if section.settings.popup_bgcolor != 'rgba(0,0,0,0)' -%}
+    #modal-{{ section.id }}, #modal-{{ section.id }} input {
+      background: {{ section.settings.popup_bgcolor }};
+    }
+    #modal-{{ section.id }} input {
+      border-color: rgba({{ section.settings.popup_txtcolor | color_to_rgb | remove: 'rgb(' | remove: ')' }}, var(--color-borders-opacity)) !important;
+    }
+  {%- endif -%}
+</style>
+
+{% schema %}
+  {
+    "name": "t:sections.popup.name",
+    "class": "mount-popup",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.popup.settings.title.label",
+        "default": "Popup"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "t:sections.popup.settings.content.label",
+        "default": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.</p><p>Read our <a href='#'>privacy policy</a>.</p>"
+      },
+      {
+        "type": "checkbox",
+        "id": "newsletter_enable",
+        "label": "t:sections.popup.settings.show_newsletter.label",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "t:sections.popup.settings.functionality.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "popup_enable",
+        "label": "t:sections.popup.settings.enable.label",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "newsletter_auto",
+        "label": "t:sections.popup.settings.show_after.label",
+        "min": 5,
+        "max": 60,
+        "step": 5,
+        "unit": "t:sections.popup.settings.show_after.info",
+        "default": 10
+      },
+      {
+        "type": "select",
+        "id": "newsletter_frequent",
+        "label": "t:sections.popup.settings.frequency.label",
+        "options": [
+          {
+            "value": "day",
+            "label": "t:sections.popup.settings.frequency.options__1.label"
+          },
+          {
+            "value": "week",
+            "label": "t:sections.popup.settings.frequency.options__2.label"
+          },
+          {
+            "value": "once",
+            "label": "t:sections.popup.settings.frequency.options__3.label"
+          }
+        ],
+        "default": "week"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.name"
+      },
+      {
+        "type": "color",
+        "id": "popup_bgcolor",
+        "label": "t:sections.announcement-bar.settings.bar_bgcolor.label",
+        "default": "#111111"
+      },
+      {
+        "type": "color",
+        "id": "popup_txtcolor",
+        "label": "t:sections.announcement-bar.settings.bar_txtcolor.label",
+        "default": "#ffffff"
+      }
+    ]
+  }
+{% endschema %}

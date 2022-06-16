@@ -1,0 +1,156 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "no_margins": true,
+        "reduced_margins": true
+      }
+    },
+    "1632816263c7346a69": {
+      "type": "heading",
+      "settings": {
+        "title": "",
+        "content": "<p>Write some information about your brand, products or story.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_size": "large"
+      }
+    },
+    "1632125386ececde1e": {
+      "type": "image",
+      "settings": {
+        "title": "",
+        "link": ""
+      }
+    },
+    "1632463631169b17ac": {
+      "type": "rich-text",
+      "blocks": {
+        "84e710e7-9193-426b-8344-9ec505c54e0d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h3"
+          }
+        },
+        "960e1999-7d45-438f-9159-3b217f335305": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Write about your team, your processes, your success or failuers, anything that might speak to the customers about what you're trying to achieve with your store and products.<\/p>"
+          }
+        },
+        "bb38fea8-11df-4fb9-a173-b4d1a984e947": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h4"
+          }
+        },
+        "c2f18ed2-a766-4040-a5e8-6ea141c53b04": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Write about your team, your processes, your success or failuers, anything that might speak to the customers about what you're trying to achieve with your store and products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "84e710e7-9193-426b-8344-9ec505c54e0d",
+        "960e1999-7d45-438f-9159-3b217f335305",
+        "bb38fea8-11df-4fb9-a173-b4d1a984e947",
+        "c2f18ed2-a766-4040-a5e8-6ea141c53b04"
+      ],
+      "settings": {
+        "text_alignment": "left"
+      }
+    },
+    "1632125416e67e4991": {
+      "type": "image-with-text",
+      "blocks": {
+        "1632125416e67e4991-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Write your story",
+            "heading_size": "h1"
+          }
+        },
+        "1632125416e67e4991-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Write some information about your brand, products or story.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1632125416e67e4991-0",
+        "1632125416e67e4991-1"
+      ],
+      "settings": {
+        "layout": "right-alignment"
+      }
+    },
+    "1632125433ea11c45b": {
+      "type": "image-with-text",
+      "blocks": {
+        "1632125433ea11c45b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Write your story",
+            "heading_size": "h1"
+          }
+        },
+        "1632125433ea11c45b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Write some information about your brand, products or story.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1632125433ea11c45b-0",
+        "1632125433ea11c45b-1"
+      ],
+      "settings": {
+        "layout": "left-alignment"
+      }
+    },
+    "16328164825c13132e": {
+      "type": "heading",
+      "settings": {
+        "title": "",
+        "content": "<p>Write more information about your brand, products or story.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_size": "large"
+      }
+    },
+    "1632125507a926bace": {
+      "type": "video-popup",
+      "settings": {
+        "title": "",
+        "video": "https:\/\/www.youtube.com\/watch?v=WU90UnyjmfI"
+      }
+    },
+    "1632125485cfaa5f96": {
+      "type": "products-slider",
+      "settings": {
+        "title": "Explore our products",
+        "collection": "",
+        "products_number": 6
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1632816263c7346a69",
+    "1632125386ececde1e",
+    "1632463631169b17ac",
+    "1632125416e67e4991",
+    "1632125433ea11c45b",
+    "16328164825c13132e",
+    "1632125507a926bace",
+    "1632125485cfaa5f96"
+  ]
+}

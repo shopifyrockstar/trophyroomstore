@@ -1,0 +1,66 @@
+<div class="wrapper">
+
+  {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <h2 class="section-header__title h4">{{ section.settings.title | escape }}</h2>
+    </div>
+  {%- endif -%}
+
+  {%- for block in section.blocks -%}
+
+    {%- case block.type -%}
+
+      {%- when 'paragraph' -%}
+        <div class="newsletter-text rte">{{ block.settings.paragraph }}</div>
+
+      {%- when 'email_form' -%}
+        {%- assign form_id = 'newsletter-form-' | append: section.id -%}
+        {%- render 'newsletter-form', id: form_id, type: 'page' -%}
+
+    {%- endcase -%}
+
+  {%- endfor -%}
+
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.newsletter.name",
+    "class": "mount-newsletter section-w-margin",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.highlight-extra-words.heading.label",
+        "default": "Newsletter"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "paragraph",
+        "name": "t:sections.faq.blocks.text.settings.text.label",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "paragraph",
+            "label": "t:sections.faq.blocks.text.settings.text.label",
+            "default": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        ]
+      },
+      {
+        "type": "email_form",
+        "name": "t:sections.newsletter.blocks.email_form.name",
+        "limit": 1
+      }
+    ],
+    "presets": [{
+      "name": "t:sections.newsletter.name",
+      "blocks": [
+        { "type": "email_form" },
+        { "type": "paragraph" }
+      ]
+    }]
+  }
+{% endschema %}

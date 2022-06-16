@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "raffle-page",
+      "settings": {
+        "bg-img-type": "none",
+        "heading": "",
+        "heading-color": "",
+        "guidelines": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

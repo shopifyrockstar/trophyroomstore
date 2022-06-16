@@ -1,0 +1,346 @@
+{
+  "sections": {
+    "1632399018db751388": {
+      "type": "slider-vertical",
+      "blocks": {
+        "1632399018db751388-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "AJII X UNION LA",
+            "caption": "'Grey Fog'",
+            "button_label": "IN-STORE RAFFLE",
+            "button_link": "https:\/\/www.google.com\/search?q=Address:+50+S+Rosalind+Ave+Retail+B,+Orlando,+FL+32801&sxsrf=ALiCzsY6A5Cx1KQ6ySe7bV23B9too4kebg:1653501932496&ei=nG-OYtrlH5CgytMP18Gy-AM&ved=2ahUKEwiZqcnanvv3AhVBq3IEHVxtDNUQvS56BAgCEAE&uact=5&oq=Address:+50+S+Rosalind+Ave+Retail+B,+Orlando,+FL+32801&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECc6BwgjELADECc6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6EgguEMcBEK8BEMgDELADEEMYAjoSCC4QxwEQowIQyAMQsAMQQxgCOgwILhDIAxCwAxBDGAJKBAhBGABKBAhGGAFQmwJYmwJgrwRoAXABeACAAW2IAW2SAQMwLjGYAQCgAQKgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz&tbs=lf:1,lf_ui:10&rflfq=1&num=10&rldimm=2196054308714740092&lqi=CjZBZGRyZXNzOiA1MCBTIFJvc2FsaW5kIEF2ZSBSZXRhaWwgQiwgT3JsYW5kbywgRkwgMzI4MDEiAkgBSKeU0Lq_t4CACFpJEAQQBRAGEAcQCBgAGAEYAhgDGAQYBRgGGAcYCCIrNTAgcyByb3NhbGluZCBhdmUgcmV0YWlsIGIgb3JsYW5kbyBmbCAzMjgwMZIBCGJvdXRpcXVlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU15T0daUFVVbFJFQUWqARAQASoMIghyZXRhaWwgYigA&phdesc=YadUVZQd6e4&sa=X&rlst=f&ibp=gwp;0,6#trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:2196054308714740092,ru_gwp:0%252C7,ru_lqi:CjZBZGRyZXNzOiA1MCBTIFJvc2FsaW5kIEF2ZSBSZXRhaWwgQiwgT3JsYW5kbywgRkwgMzI4MDEiAkgBSKeU0Lq_t4CACFpJEAQQBRAGEAcQCBgAGAEYAhgDGAQYBRgGGAcYCCIrNTAgcyByb3NhbGluZCBhdmUgcmV0YWlsIGIgb3JsYW5kbyBmbCAzMjgwMZIBCGJvdXRpcXVlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU15T0daUFVVbFJFQUWqARAQASoMIghyZXRhaWwgYigA,ru_phdesc:YadUVZQd6e4,trex_id:Qypxlf&lpg=cid:CgIgAQ%3D%3D",
+            "image1": "shopify:\/\/shop_images\/848369_01_jpg.png",
+            "video1": "",
+            "image1_caption": "<p>AJII RETRO <\/p>",
+            "image1_link": "",
+            "video2": "",
+            "image2_caption": "",
+            "image2_link": "",
+            "video3": "",
+            "image3_caption": "",
+            "image3_link": ""
+          }
+        },
+        "ba185919-f108-4e68-a1b8-929fd57ed2b3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "'Infrared'",
+            "caption": "AIR JORDAN 4 RETRO",
+            "button_label": "ENTER RAFFLE IN-STORE",
+            "button_link": "https:\/\/goo.gl\/maps\/9UCu7aQsojtYgAzm9",
+            "image1": "shopify:\/\/shop_images\/DH6927-061-PHCFH001.jpg",
+            "video1": "",
+            "image1_caption": "<p>AJIV<\/p>",
+            "image1_link": "",
+            "video2": "",
+            "image2_caption": "",
+            "image2_link": "",
+            "video3": "",
+            "image3_caption": "",
+            "image3_link": ""
+          }
+        },
+        "1632399018db751388-0": {
+          "type": "image",
+          "settings": {
+            "heading": "SS22",
+            "caption": "NEW ARRIVALS",
+            "button_label": "AVAILABLE IN-STORE",
+            "button_link": "https:\/\/goo.gl\/maps\/zE8BDMgisUH82bCP6",
+            "image1": "shopify:\/\/shop_images\/17573321_37671770_2048.png",
+            "video1": "",
+            "image1_caption": "<p>PALM ANGELS<\/p>",
+            "image1_link": "",
+            "image2": "shopify:\/\/shop_images\/17572918_37508297_2048.png",
+            "video2": "",
+            "image2_caption": "<p>PALM ANGELS<\/p>",
+            "image2_link": "",
+            "video3": "",
+            "image3_caption": "",
+            "image3_link": ""
+          }
+        },
+        "5096a175-a909-4fc0-90e1-863848e88225": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "'Jade'",
+            "caption": "AIR JORDAN 5 RETRO",
+            "button_label": "RAFFLE ENTRY IN-STORE ONLY (FL I.D. REQUIRED)",
+            "button_link": "",
+            "image1": "shopify:\/\/shop_images\/440888-300-PHSLH000.jpg",
+            "video1": "",
+            "image1_caption": "<p>AJ5 RETRO<\/p>",
+            "image1_link": "",
+            "video2": "",
+            "image2_caption": "",
+            "image2_link": "",
+            "video3": "",
+            "image3_caption": "",
+            "image3_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1632399018db751388-1",
+        "ba185919-f108-4e68-a1b8-929fd57ed2b3",
+        "1632399018db751388-0",
+        "5096a175-a909-4fc0-90e1-863848e88225"
+      ],
+      "settings": {
+        "text_size": "large",
+        "blending_modes": true
+      }
+    },
+    "1648227093dd4fb73c": {
+      "type": "image",
+      "disabled": true,
+      "settings": {
+        "title": "Bring your donations on Air Max Day in-store at TROPHY ROOM™",
+        "image": "shopify:\/\/shop_images\/Announce_Story-02_1080x1920_8d372f15-6ef8-4096-87f7-8f17762b116a.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Announce_Story-02_1080x1920_8d372f15-6ef8-4096-87f7-8f17762b116a.jpg",
+        "link": ""
+      }
+    },
+    "163239902249095ea8": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "New Arrivals",
+        "caption": "",
+        "collection": "latest-releases",
+        "show_view_all": true,
+        "layout": "regular",
+        "products_number": 6,
+        "show_promotional_block": false,
+        "promotional_block_title": "",
+        "promotional_block_button_label": "",
+        "promotional_block_button_link": ""
+      }
+    },
+    "1632399166bb4a0006": {
+      "type": "collection-list",
+      "blocks": {
+        "75daff0d-f076-42c4-9f01-f72f5aa5bc0f": {
+          "type": "collection",
+          "settings": {
+            "collection": "off-white",
+            "image": "shopify:\/\/shop_images\/16863818_33927572_2048.png"
+          }
+        },
+        "1632399166bb4a0006-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "palm-angels",
+            "image": "shopify:\/\/shop_images\/16865236_33783741_2048.png"
+          }
+        },
+        "1632399166bb4a0006-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "heron-preston",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-25_at_11.20.50_AM.png"
+          }
+        },
+        "7fba67be-0ead-445e-b13d-0a4a64f58113": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "ambush",
+            "image": "shopify:\/\/shop_images\/ambush-sss22-collection-lookbook-05.jpg"
+          }
+        },
+        "fd957d20-4aed-4356-b71a-1e79cc9014bd": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "mastermind",
+            "image": "shopify:\/\/shop_images\/mastermind-japan-c2h4-vol-2-c-mastermind-collection-lookbook-release-info-02.jpg"
+          }
+        },
+        "b2b3cc20-cd51-4786-aed5-b05dc1d92cc1": {
+          "type": "collection",
+          "settings": {
+            "collection": "honor-the-gift",
+            "image": "shopify:\/\/shop_images\/HTG_IG.jpg"
+          }
+        },
+        "9db0e922-d7f5-4f08-aa59-679fab07054c": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "medicom",
+            "image": "shopify:\/\/shop_images\/0153-medicom-bearbrick-hr-giger_white_20_copy_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "75daff0d-f076-42c4-9f01-f72f5aa5bc0f",
+        "1632399166bb4a0006-0",
+        "1632399166bb4a0006-1",
+        "7fba67be-0ead-445e-b13d-0a4a64f58113",
+        "fd957d20-4aed-4356-b71a-1e79cc9014bd",
+        "b2b3cc20-cd51-4786-aed5-b05dc1d92cc1",
+        "9db0e922-d7f5-4f08-aa59-679fab07054c"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "16323991613c782d33": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "16323991613c782d33-0": {
+          "type": "header",
+          "settings": {
+            "show_vendor": true,
+            "show_reviews": true,
+            "show_tax_info": false,
+            "show_sku": false,
+            "show_barcode": false
+          }
+        },
+        "16323991613c782d33-1": {
+          "type": "variant_picker",
+          "settings": {
+            "show_color_swatches": true,
+            "show_quantities": "no"
+          }
+        },
+        "16323991613c782d33-2": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity_selector": true
+          }
+        },
+        "16323991613c782d33-3": {
+          "type": "product_link",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16323991613c782d33-0",
+        "16323991613c782d33-1",
+        "16323991613c782d33-2",
+        "16323991613c782d33-3"
+      ],
+      "settings": {
+        "product": "",
+        "media_aspect": "natural",
+        "enable_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "1632399064cfd08326": {
+      "type": "images-with-text-overlay",
+      "disabled": true,
+      "blocks": {
+        "1632399064cfd08326-0": {
+          "type": "image",
+          "settings": {
+            "alignment": "50% 50%",
+            "heading": "Emphasize a collection",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1632399064cfd08326-1": {
+          "type": "image",
+          "settings": {
+            "alignment": "50% 50%",
+            "heading": "Show a product",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1632399064cfd08326-2": {
+          "type": "image",
+          "settings": {
+            "alignment": "50% 50%",
+            "heading": "Write your Story",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "45d5c6a8-c34a-43df-82d4-c6b57da4e647": {
+          "type": "image",
+          "settings": {
+            "alignment": "50% 50%",
+            "heading": "Write your Story",
+            "description": "<p>Give a freebie<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1632399064cfd08326-0",
+        "1632399064cfd08326-1",
+        "1632399064cfd08326-2",
+        "45d5c6a8-c34a-43df-82d4-c6b57da4e647"
+      ],
+      "settings": {
+        "title": "Images with text overlay",
+        "layout": "asymmetrical",
+        "text_alignment": "horizontal-left vertical-bottom",
+        "color_text": "#ffffff",
+        "color_bg": ""
+      }
+    },
+    "1632399157698a4648": {
+      "type": "video-popup",
+      "disabled": true,
+      "settings": {
+        "title": "Video popup",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "1628782268aab83134": {
+      "type": "blog-posts",
+      "disabled": true,
+      "blocks": {
+        "3a12076c-f97c-4b6a-84a8-afed7e50b9ef": {
+          "type": "info",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "062a779c-0a2e-47d3-992a-a4901edc79fe": {
+          "type": "title",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "3a12076c-f97c-4b6a-84a8-afed7e50b9ef",
+        "062a779c-0a2e-47d3-992a-a4901edc79fe"
+      ],
+      "settings": {
+        "title": "Discover",
+        "blog": "lookbooks",
+        "post_limit": 6,
+        "blog_show_image": true,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "1632399018db751388",
+    "1648227093dd4fb73c",
+    "163239902249095ea8",
+    "1632399166bb4a0006",
+    "16323991613c782d33",
+    "1632399064cfd08326",
+    "1632399157698a4648",
+    "1628782268aab83134"
+  ]
+}

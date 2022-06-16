@@ -1,0 +1,230 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_vendor": true,
+            "show_reviews": true,
+            "show_tax_info": false,
+            "show_sku": false,
+            "show_barcode": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_color_swatches": true,
+            "show_quantities": "no"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity_selector": true
+          }
+        },
+        "pickup_avaiability": {
+          "type": "pickup_avaiability",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "b55c1a64-c8e6-44ea-827d-dee6e2917e82": {
+          "type": "toggles-with-icons",
+          "settings": {
+            "title": "Key product features",
+            "feature1_title": "Unique features",
+            "feature1_text": "<p>Add extra product information, such technical data or key features and benefits.<\/p>",
+            "feature2_title": "Technical data",
+            "feature2_text": "<p>Add extra product information, such technical data or key features and benefits.<\/p>",
+            "feature3_title": "Usage scenarious",
+            "feature3_text": "<p>Add extra product information, such technical data or key features and benefits.<\/p>",
+            "feature4_title": "",
+            "feature4_text": "",
+            "feature5_title": "",
+            "feature5_text": "",
+            "feature6_title": "",
+            "feature6_text": ""
+          }
+        },
+        "efc6834f-947a-4f67-af48-10db1edad1d9": {
+          "type": "images-with-text-slider",
+          "settings": {
+            "title": "More features",
+            "gallery_aspect": "1",
+            "image1_title": "Feature 1",
+            "image1_caption": "<p>Write about unique, individual features that make your product stand out.<\/p>",
+            "image2_title": "Feature 2",
+            "image2_caption": "<p>Give more details about the concept, production process, manufacturing details.<\/p>",
+            "image3_title": "Feature 3",
+            "image3_caption": "<p>Showcase your product's greatest strengths and unique features.<\/p>",
+            "image4_title": "",
+            "image4_caption": "",
+            "image5_title": "",
+            "image5_caption": "",
+            "image6_title": "",
+            "image6_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "header",
+        "variant_picker",
+        "buy_buttons",
+        "pickup_avaiability",
+        "share",
+        "description",
+        "b55c1a64-c8e6-44ea-827d-dee6e2917e82",
+        "efc6834f-947a-4f67-af48-10db1edad1d9"
+      ],
+      "settings": {
+        "media_aspect": "natural",
+        "enable_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "1632400736d50a9c7b": {
+      "type": "heading",
+      "settings": {
+        "title": "More details",
+        "content": "<p>Write a big, bold statement abour your product.<\/p>",
+        "button_label": "Read More",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_size": "extra"
+      }
+    },
+    "1632400739c41e3e2f": {
+      "type": "image-gallery",
+      "blocks": {
+        "1632400739c41e3e2f-0": {
+          "type": "image",
+          "settings": {
+            "title": "Image",
+            "caption": "<p>Write some details about this image.<\/p>"
+          }
+        },
+        "1632400739c41e3e2f-1": {
+          "type": "image",
+          "settings": {
+            "title": "Image",
+            "caption": "<p>Write some details about this image.<\/p>"
+          }
+        },
+        "1632400739c41e3e2f-2": {
+          "type": "image",
+          "settings": {
+            "title": "Image",
+            "caption": "<p>Write some details about this image.<\/p>"
+          }
+        },
+        "1632400739c41e3e2f-3": {
+          "type": "image",
+          "settings": {
+            "title": "Image",
+            "caption": "<p>Write some details about this image.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1632400739c41e3e2f-0",
+        "1632400739c41e3e2f-1",
+        "1632400739c41e3e2f-2",
+        "1632400739c41e3e2f-3"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "16324007935e9ff3a2": {
+      "type": "video-background",
+      "blocks": {
+        "16324007935e9ff3a2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product video",
+            "heading_size": "regular"
+          }
+        },
+        "16324007935e9ff3a2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use a video to emphasize your product's unique story, design details or usage instructions. <\/p>",
+            "text_size": "regular"
+          }
+        }
+      },
+      "block_order": [
+        "16324007935e9ff3a2-0",
+        "16324007935e9ff3a2-1"
+      ],
+      "settings": {
+        "title": "",
+        "video": "\/\/cdn.shopify.com\/s\/files\/1\/0266\/9543\/4315\/files\/Share_your_brand_story_by_adding_a_video_to_your_store.mp4?3663",
+        "video_height": "56.25%",
+        "text_alignment": "horizontal-left vertical-bottom",
+        "color_text": "rgba(0,0,0,0)",
+        "color_bg": "rgba(0,0,0,0)"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "products_number": 3
+      }
+    },
+    "163240079617e584dc": {
+      "type": "collection-list",
+      "blocks": {
+        "163240079617e584dc-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "163240079617e584dc-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "fe07b75f-05c6-4e0e-8f98-a406948bcb21": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "163240079617e584dc-0",
+        "163240079617e584dc-1",
+        "fe07b75f-05c6-4e0e-8f98-a406948bcb21"
+      ],
+      "settings": {
+        "title": "Explore other collections"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1632400736d50a9c7b",
+    "1632400739c41e3e2f",
+    "16324007935e9ff3a2",
+    "product-recommendations",
+    "163240079617e584dc"
+  ]
+}

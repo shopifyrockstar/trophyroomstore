@@ -1,0 +1,56 @@
+<div id="AjaxCartSubtotal">
+
+	<div class="cart__footer {% if cart.item_count == 0 %} cart--empty {% endif %}">
+
+	  {%- if settings.cart_notes_enable -%}
+	    <textarea name="note" id="cartSpecialInstructions" placeholder="{{ 'cart.note' | t }}" aria-label="{{ 'cart.note' | t }}" form="cart">{{ cart.note }}</textarea>
+	  {%- endif -%}
+
+	  <div class="cart-out">
+
+	    <div id="CartDetails">
+	      
+	      {%- if cart.cart_level_discount_applications != blank -%} 
+	        <div>
+	          <p id="CartSubTotal">{{ 'cart.subtotal' | t }} <span>{{ cart.items_subtotal_price | money }}</span></p>
+	          <p id="CartDiscounts">
+	            {{ 'cart.discounts' | t }}
+	            {%- for discount_application in cart.cart_level_discount_applications -%}
+	              <span style="display: inline-block">{{ discount_application.title }} <span style="display: inline-block">(-{{ discount_application.total_allocated_amount | money | strip }})</span></span>
+	            {%- endfor -%}
+	          </p>
+	        </div>
+	      {%- endif -%}
+
+	    </div>
+
+	    <p id="CartTotal">{{ 'cart.total' | t }} <span>{{ cart.total_price | money }}</span></p>
+	    <span class="info">{{ 'cart.shipping_at_checkout' | t }}</span>
+
+	    <div class="cart-actions buttons-holder {% if additional_checkout_buttons and settings.cart_additional_buttons and type == 'page' %} cart-actions--additional-checkout-buttons {% endif %}">
+	      
+	      <a id="ViewCart" href="{{ routes.cart_url }}" class="button button--border button--align">{{ 'cart.view_cart' | t }}</a>
+
+	      <noscript>
+	      	<button name="update" class="button button--border button--wide" form="cart">{{ 'cart.update_cart' | t }}</button>
+	      </noscript>
+	  
+	      <button id="CheckOut" class="button button--solid {% if additional_checkout_buttons and settings.cart_additional_buttons and type == 'page' %} button--wide {% endif %}" type="submit" name="checkout" form="cart">{{ 'cart.checkout' | t }}</button>
+	    
+	      {%- if additional_checkout_buttons and settings.cart_additional_buttons -%}
+	        <div class="additional-checkout-buttons additional-checkout-buttons--vertical">{{ content_for_additional_checkout_buttons }}</div>
+	      {%- endif -%}
+
+	    </div>
+
+	  </div>
+
+	  <div class="cart-continue">
+	    <a href="{{ routes.all_products_collection_url }}" class="button button--solid button--wide button--align">
+	      <span>{{ 'cart.continue_browsing' | t }}</span>
+	    </a>
+	  </div>
+
+	</div>
+
+</div>

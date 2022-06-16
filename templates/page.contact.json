@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-contact-page",
+      "blocks": {
+        "1628539090bcf511f6-0": {
+          "type": "email",
+          "settings": {
+          }
+        },
+        "1628539090bcf511f6-1": {
+          "type": "field",
+          "settings": {
+            "label": "Message",
+            "type": "textarea",
+            "required": true
+          }
+        },
+        "1628539090bcf511f6-2": {
+          "type": "button",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1628539090bcf511f6-0",
+        "1628539090bcf511f6-1",
+        "1628539090bcf511f6-2"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "164822147340ef3463": {
+      "type": "rich-text",
+      "blocks": {
+        "16482214730c743532-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "50 S Rosalind Ave Retail B, Orlando, FL 32801",
+            "heading_size": "h3"
+          }
+        },
+        "16482214730c743532-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Visit Us",
+            "button_link": "https:\/\/goo.gl\/maps\/zE8BDMgisUH82bCP6"
+          }
+        },
+        "16482214730c743532-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "16482214730c743532-0",
+        "16482214730c743532-2",
+        "16482214730c743532-1"
+      ],
+      "settings": {
+        "text_alignment": "left"
+      }
+    },
+    "16482199781983cead": {
+      "type": "toggles-with-icons",
+      "disabled": true,
+      "blocks": {
+        "1648219978a49b5bff-0": {
+          "type": "text",
+          "settings": {
+            "title": "Shipping details",
+            "body": "<p>Write some useful information about your shipping details<\/p><p>Link to your <a href='#'>shipping policy<\/a>.<\/p>",
+            "select_icon": "shipping-box"
+          }
+        },
+        "1648219978a49b5bff-1": {
+          "type": "text",
+          "settings": {
+            "title": "Delivery details",
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href='#'>offers page<\/a>.<\/p>",
+            "select_icon": "delivery"
+          }
+        },
+        "1648219978a49b5bff-2": {
+          "type": "text",
+          "settings": {
+            "title": "Returns details",
+            "body": "<p>Show customers how much time they have for testing your products<\/p><p>Link to your <a href='#'>returns policy<\/a>.<\/p>",
+            "select_icon": "time-limit"
+          }
+        }
+      },
+      "block_order": [
+        "1648219978a49b5bff-0",
+        "1648219978a49b5bff-1",
+        "1648219978a49b5bff-2"
+      ],
+      "settings": {
+        "title": "Toggles with icons"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164822147340ef3463",
+    "16482199781983cead"
+  ]
+}

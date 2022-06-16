@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "breakfast": {
+      "type": "breakfast",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "breakfast"
+  ]
+}

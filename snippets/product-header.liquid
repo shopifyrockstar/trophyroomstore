@@ -1,0 +1,85 @@
+<div class="product__header">
+
+  <{% if type == 'section' %}h3{% else %}h1{% endif %} class="product__title h2">{{ product.title | escape }}</{% if type == 'section' %}h3{% else %}h1{% endif %}>
+
+  {%- if show_vendor -%}
+    {%- capture vendor -%} {{ product.vendor | link_to_vendor }} {%- endcapture -%}
+    <p class="product__vendor text-size--small">{{ 'product.page.vendor_html' | t: vendor: vendor }}</p>
+  {%- endif -%}
+
+  <span class="product__price text-size--larger" id="product-price-{{ section.id }}">
+
+    <span class="product__price-container">
+
+      <span class="product__price--original"><span class="visually-hidden">{{ 'general.accessibility_labels.price.regular' | t }}</span>{{ variant.price | money }}</span>
+      
+      <span class="product__price--compare">
+        <span class="visually-hidden">{{ 'general.accessibility_labels.price.sale' | t }}</span>
+        {%- if variant.compare_at_price > variant.price -%}
+          {{ variant.compare_at_price | money }}
+        {%- endif -%}
+      </span>
+
+      <span class="product__price--unit text-size--smaller">
+        {%- liquid
+          if variant.unit_price_measurement
+            echo variant.unit_price | money
+            echo '/'
+            if variant.unit_price_measurement.reference_value != 1
+              echo variant.unit_price_measurement.reference_value
+            endif
+            echo variant.unit_price_measurement.reference_unit
+          endif
+        -%}
+      </span>
+
+    </span>
+  	
+    {%- if show_reviews and product.metafields.reviews.rating.value != blank -%}
+      <span class="product__price-reviews text-size--regular">
+        <span class="visually-hidden">{{ 'general.accessibility_labels.rating_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}</span>
+        <span class="rating-icon" aria-hidden="true">
+          {%- render 'theme-symbols', icon: 'star' -%}
+        </span>
+        <span class="rating-text" aria-hidden="true">
+          {{ product.metafields.reviews.rating.value.rating | round: 1 | remove: '.0' }} / {{ product.metafields.reviews.rating.value.scale_max | round: 2 | remove: '.0' }}
+        </span>
+      </span>
+
+    {%- endif -%}
+
+  </span>
+
+  <div class="product__extras text-size--smaller">
+
+    {%- if show_tax_info -%}
+      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+        <span class="product__policies" data-product-policies>
+          {% if shop.taxes_included %}
+            {{ 'product.page.include_taxes' | t }}
+          {%- endif -%}
+          {%- if shop.shipping_policy.body != blank -%}
+            {{ 'product.page.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+          {%- endif -%}
+        </span>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if show_sku -%}
+      <span class="product__sku">
+        {%- if variant.sku != empty -%}
+          {{ 'product.page.sku' | t }}{{ variant.sku | escape }}
+        {%- endif -%}
+      </span>
+    {%- endif -%}
+    {%- if show_barcode -%}
+      <span class="product__barcode">
+        {%- if variant.barcode != empty -%}
+          {{ 'product.page.barcode' | t }}{{ variant.barcode | escape }}
+        {%- endif -%}
+      </span>
+    {%- endif -%}
+
+  </div>
+
+</div>

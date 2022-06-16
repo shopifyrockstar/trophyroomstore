@@ -1,0 +1,84 @@
+<div class="wrapper">
+
+  {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <h2 class="section-header__title h4">{{ section.settings.title | escape }}</h2>
+    </div>
+  {%- endif -%}
+
+  {%- unless section.settings.video == blank -%}
+
+    <video-popup id="video-popup--{{ section.id }}" style="display:block"
+      data-video data-product-media-type="{{ section.settings.video.type }}"
+    >
+
+      <template>
+        {%- if section.settings.video.type == 'youtube' -%}
+          <iframe src="https://www.youtube.com/embed/{{ section.settings.video.id }}?enablejsapi=1&autoplay=1" class="js-youtube video-popup__iframe" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.title | escape }}"></iframe>
+        {%- else -%}
+          <iframe src="https://player.vimeo.com/video/{{ section.settings.video.id }}?autoplay=1" class="js-vimeo video-popup__iframe" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.title | escape }}"></iframe>
+        {%- endif -%}
+      </template>
+
+      <div class="video-popup__container">
+
+        <a class="video-popup__link" href="{{ section.settings.video }}">
+
+          {%- unless section.settings.video == blank -%}
+            <span class="video-popup__play" aria-hidden="true">
+              {%- render 'theme-symbols', icon: 'play' -%}
+            </span>
+          {%- endunless -%}
+
+          {%- unless section.settings.image == blank -%}
+            <span class="video-popup__background" aria-hidden="true">
+              {%- liquid
+                assign sizes = 'sizes="(max-width: 1023px) calc(100vw - 60px), 84vw"'
+                render 'lazy-image', image: section.settings.image, type: 'background', alt: section.settings.title, sizes: sizes
+              -%}
+            </span>
+          {%- else -%}
+            <span class="video-popup__background onboarding-svg onboarding-background">
+              <span style="opacity: .5;">{{ 'lifestyle-1' | placeholder_svg_tag }}</span>
+            </span>
+          {%- endunless -%}
+
+        </a>
+
+      </div>
+
+    </video-popup>
+
+  {%- endunless -%}
+
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.video-popup.name",
+    "class": "mount-video-popup section-w-margin no-overflow",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.highlight-extra-words.heading.label",
+        "default": "Video popup"
+      },
+      {
+        "id": "video",
+        "type": "video_url",
+        "label": "t:sections.video-popup.settings.video.label",
+        "accept": ["youtube", "vimeo"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.video-popup.settings.image.label"
+      }
+    ],
+    "presets": [{
+      "name": "t:sections.video-popup.name"
+    }]
+  }
+{% endschema %}

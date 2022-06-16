@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "no_margins": false,
+        "reduced_margins": false
+      }
+    },
+    "1640968816e10b5bc9": {
+      "type": "image-gallery",
+      "blocks": {
+        "1640968816a60ec17e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AJ5_TR-9_4b985420-b896-4290-ac3e-469c1249d1b1.jpg",
+            "title": "TROPHY ROOM™ X AIR JORDAN V RETRO",
+            "caption": "<p>“I wanted our 1st iteration of a 1-14 Retro to be something special & memorable...It was important for the design to be authentic & unique, so I incorporated all of the colors from the original trophy room in our house into one of my favorite silhouettes, The Jordan 5.”<\/p><p>- Marcus Jordan<\/p><p>The model features ice blue, sail & red colors with subtle hints of gold that truly make this pair a trophy. Marcus also designed a counterpart red pair featuring Nike Air branding for friends & family only, limited to 223 pairs & not available for release.<\/p>"
+          }
+        },
+        "1640968816a60ec17e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AJ1_TR-10_a105ad22-68d6-42e3-b68e-b3cbfa097c3d.jpg",
+            "title": "TROPHY ROOM™ X AIR JORDAN I RETRO",
+            "caption": "<p>\"I first heard about it when I was 10 or 11, just from doing my own research about my dad. I’ve always been a student of his legacy. There have always been rumors, and I think that even back in ‘85, after that weekend, there was chatter of the “freeze out.” I just did my own research and got myself familiar with the details. Growing up, there were conversations my father and I had, yet I never thought that years later, I’d be referencing some of them for a collaboration with the brand.\"<\/p><p>- Marcus Jordan<\/p>"
+          }
+        },
+        "1640968816a60ec17e-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tr17_webb_316e33d5-0b25-457c-ac21-10f28e57c49c.jpg",
+            "title": "TROPHY ROOM™ X AIR JORDAN XVII RETRO",
+            "caption": "<p>The TROPHY ROOM™ XVII boasts a cool grey suede & metallic gold color way that ties back to the boutique's overall theme & aesthetic, transforming an already sleek shoe into a luxurious sneaker that can be styled off the court, while still performing on the court. The Air Jordan XVII'S original design inspiration was influenced by three components; The fine details from an Aston Martin, the smooth lines and flow of a jazz solo and the long Air Jordan history of innovations in style.<\/p>"
+          }
+        },
+        "1640968816a60ec17e-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KHALED_MARCUS_TR_214e890a-7a03-4dc2-b304-19c357b5b718.jpg",
+            "title": "TROPHY ROOM™ X AIR JORDAN XVI RETRO",
+            "caption": "<p>The TROPHY ROOM XVI resonated so well with me because of the premium details incorporated in the model. The patent leather toe, the icy sole, the premium leather used on the shroud. All of those elements truly make this silhouette a classic. For TROPHY ROOM to lead the return of the XVI with help from DJ Khaled is an honor. - Marcus Jordan<\/p>"
+          }
+        },
+        "f0e79420-c2e5-4bab-9020-066f4fca4edf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/air-jordan-23-trophy-room-marcus-jordan-1.png",
+            "title": "TROPHY ROOM™ X AIR JORDAN XXIII RETRO",
+            "caption": "<p>The inaugural collaboration from Jordan & TROPHY ROOM. The model features Michael Jordan's handwritten signature pattern in an exclusive color way. The White TROPHY ROOM XX3 is limited to 523 pairs w\/ each pair individually numbered.<\/p>"
+          }
+        },
+        "89a80ac5-7a4d-44f7-916d-353facebf0e3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Image",
+            "caption": "<p>Write some details about this image.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640968816a60ec17e-0",
+        "1640968816a60ec17e-1",
+        "1640968816a60ec17e-2",
+        "1640968816a60ec17e-3",
+        "f0e79420-c2e5-4bab-9020-066f4fca4edf",
+        "89a80ac5-7a4d-44f7-916d-353facebf0e3"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1640968816e10b5bc9"
+  ]
+}

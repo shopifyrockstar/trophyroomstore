@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "layout": "regular",
+        "products_number": 48,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "show_promotional_block": false,
+        "promotional_block_title": "Write a short, captivating paragraph about your products.",
+        "promotional_block_button_label": "",
+        "promotional_block_button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

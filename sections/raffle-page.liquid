@@ -1,0 +1,125 @@
+<style>
+  .PageHeader { margin: 0; }
+  
+  .Footer--withMargin { margin-top: 0; }
+  
+  .raffle-header h1 { color: {{ section.settings.heading-color }}; }
+  
+</style>
+
+<div class="raffle-page-container" {% if section.settings.bg-img-type == 'background' %}style="background-image: url('{{ section.settings.bg-img | img_url: 'master' }}');"{% endif %}>
+
+  <header class="PageHeader raffle-header" {% if section.settings.bg-img-type == 'header' %}style="background-image: url('{{ section.settings.bg-img | img_url: 'master' }}'); height: 400px;"{% endif %}>
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ section.settings.heading }}</h1>
+    </div>
+  </header>
+
+  <div class="Container">
+
+    <div class="PageContent PageContent--narrow Rte">
+      {{ page.content }}
+      <div style="margin:0 auto;" class="pxFormGenerator" id="syvk855-rWMHFUt4dcNqGw"></div>
+      {{ section.settings.guidelines }}
+      {% include 'lookbooks-app' %}
+      <div class="klaviyo-form-SBTXiN"></div>
+    </div>
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Raffle Page",
+  "settings": [
+  	{
+	  "type": "select",
+	  "id": "bg-img-type",
+	  "label": "Background Image Type",
+	  "options":  [
+		{
+		  "value": "background",
+	  	  "label": "Background"
+		},
+		{
+		  "value": "header",
+		  "label": "Header"
+		},
+		{
+		  "value": "none",
+		  "label": "None"
+		}
+	  ],
+	  "default": "none"
+	},
+	{
+	  "type": "image_picker",
+	  "id": "bg-img",
+	  "label": "Background Image"
+	},
+	{
+	  "type": "header",
+	  "content": "Header"
+	},
+	{
+	  "type": "text",
+	  "id": "heading",
+	  "label": "Heading"
+	},
+	{
+	  "type": "color",
+	  "id": "heading-color",
+	  "label": "Heading Color"
+	},
+	{
+	  "type": "header",
+	  "content": "Guidelines"
+	},
+	{
+	  "type": "richtext",
+	  "id": "guidelines",
+	  "label": "Guidelines"
+	}
+  ],
+  "blocks": [
+	{
+	  "type": "field",
+	  "name": "Field",
+	  "settings": [
+		{
+		  "type": "select",
+	 	  "id": "type",
+		  "label": "Field Type",
+		  "options": [
+		  	{
+			  "value": "checkbox",
+			  "label": "Checkbox"
+			},
+			{
+			  "value": "email",
+			  "label": "Email"
+			},
+			{
+			  "value": "text",
+			  "label": "Text"
+			}
+		  ],
+		  "default": "text"
+		},
+		{
+		  "type": "text",
+		  "id": "label",
+		  "label": "Field Name"
+		}
+	  ]
+	}
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

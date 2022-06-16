@@ -1,0 +1,91 @@
+{%- if template contains 'product' and product.featured_media -%}
+
+	{%- assign image = product.featured_media -%}
+	{%- capture srcset -%} 
+		{%- if image.width >= 260 -%}{{ image | img_url: '260x' }} 260w{%- endif -%} 
+		{%- if image.width >= 320 -%},{{ image | img_url: '320x' }} 320w{%- endif -%} 
+		{%- if image.width >= 360 -%},{{ image | img_url: '360x' }} 360w{%- endif -%} 
+		{%- if image.width >= 420 -%},{{ image | img_url: '420x' }} 420w{%- endif -%} 
+		{%- if image.width >= 480 -%},{{ image | img_url: '480x' }} 480w{%- endif -%} 
+		{%- if image.width >= 640 -%},{{ image | img_url: '640x' }} 640w{%- endif -%} 
+		{%- if image.width >= 840 -%},{{ image | img_url: '840x' }} 840w{%- endif -%} 
+		{%- if image.width >= 1080 -%},{{ image | img_url: '1080x' }} 1080w{%- endif -%} 
+		{%- if image.width >= 1280 -%},{{ image | img_url: '1280x' }} 1280w{%- endif -%} 
+		{%- if image.width >= 1540 -%},{{ image | img_url: '1540x' }} 1540w{%- endif -%} 
+		{%- if image.width >= 1860 -%},{{ image | img_url: '1860x' }} 1860w{%- endif -%} 
+		{%- if image.width >= 2100 -%},{{ image | img_url: '2100x' }} 2100w{%- endif -%}
+		{%- if image.width >= 2100 -%}{{ image | img_url: '2100x' }} 2100w{%- endif -%}
+	{%- endcapture -%}
+	<link rel="preload" as="image" href="{{ image | img_url: '480x' }}" imagesrcset="{{ srcset }}" imagesizes="(max-width: 835px) calc(100vw - 90px), (max-width: 1023px) 50vw, 42vw">
+
+{%- elsif template contains 'collection' -%}
+ 	{%- comment %}<locksmith:f517>{% endcomment -%}
+ 	  {%- assign locksmith_c3a5_forloop__size = 0 %}{%- for product in collection.products limit: 3 -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_c3a5_forloop__size = locksmith_c3a5_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_c3a5_forloop__index = nil -%}
+ 	{%- comment %}</locksmith:f517>{% endcomment -%}
+ 	{%- for product in collection.products limit: 3 -%}
+ 		{%- comment %}<locksmith:3fe5>{% endcomment -%}
+ 		  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_c3a5_forloop__index == nil %}{% assign locksmith_c3a5_forloop__index = 1 %}{% assign locksmith_c3a5_forloop__index0 = 0 %}{% else %}{% assign locksmith_c3a5_forloop__index = locksmith_c3a5_forloop__index | plus: 1 %}{% assign locksmith_c3a5_forloop__index0 = locksmith_c3a5_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_c3a5_forloop__index == 1 %}{% assign locksmith_c3a5_forloop__first = true %}{% else %}{% assign locksmith_c3a5_forloop__first = false %}{% endif %}{% if locksmith_c3a5_forloop__index == locksmith_c3a5_forloop__size %}{% assign locksmith_c3a5_forloop__last = true %}{% else %}{% assign locksmith_c3a5_forloop__last = false %}{% endif %}{% assign locksmith_c3a5_forloop__rindex = locksmith_c3a5_forloop__size | minus: locksmith_c3a5_forloop__index | minus: 1 %}{% assign locksmith_c3a5_forloop__rindex0 = locksmith_c3a5_forloop__size | minus: locksmith_c3a5_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+ 		{%- comment %}</locksmith:3fe5>{% endcomment -%}
+ 		{%- liquid 
+ 			if layout == 'asymmetrical'
+        if locksmith_c3a5_forloop__index0 == 0
+          assign media_sizes = '(max-width: 599px) 46vw, (max-width: 1023px) 55vw, 17vw'
+        elsif locksmith_c3a5_forloop__index0 == 1
+          assign media_sizes = '(max-width: 599px) 46vw, (max-width: 1023px) 38vw, 34vw'
+        elsif locksmith_c3a5_forloop__index0 == 3
+          assign media_sizes = '(max-width: 599px) 46vw, (max-width: 1023px) 55vw, 25vw'
+        endif
+      else
+      	assign media_sizes= '(max-width: 835px) calc(50vw - 50px), (max-width: 1023px) 33vw, 25vw';
+      endif
+ 			assign image = product.featured_media
+		-%}
+		{%- if settings.grid_aspect == 'natural' -%}
+			{%- capture srcset -%} 
+				{%- if image.width >= 260 -%}{{ image | img_url: '260x' }} 260w{%- endif -%} 
+				{%- if image.width >= 320 -%},{{ image | img_url: '320x' }} 320w{%- endif -%} 
+				{%- if image.width >= 360 -%},{{ image | img_url: '360x' }} 360w{%- endif -%} 
+				{%- if image.width >= 420 -%},{{ image | img_url: '420x' }} 420w{%- endif -%} 
+				{%- if image.width >= 480 -%},{{ image | img_url: '480x' }} 480w{%- endif -%} 
+				{%- if image.width >= 640 -%},{{ image | img_url: '640x' }} 640w{%- endif -%} 
+				{%- if image.width >= 840 -%},{{ image | img_url: '840x' }} 840w{%- endif -%} 
+				{%- if image.width >= 1080 -%},{{ image | img_url: '1080x' }} 1080w{%- endif -%} 
+				{%- if image.width >= 1280 -%},{{ image | img_url: '1280x' }} 1280w{%- endif -%} 
+				{%- if image.width >= 1540 -%},{{ image | img_url: '1540x' }} 1540w{%- endif -%} 
+				{%- if image.width >= 1860 -%},{{ image | img_url: '1860x' }} 1860w{%- endif -%} 
+				{%- if image.width >= 2100 -%},{{ image | img_url: '2100x' }} 2100w{%- endif -%}
+			{%- endcapture -%}
+		{%- else -%}
+			{%- liquid 
+				assign divide_ratio = 1 | divided_by: ratio
+			  assign srcset_260 = 260 | times: divide_ratio | round | prepend: '260x'
+			  assign srcset_320 = 320 | times: divide_ratio | round | prepend: '320x'
+			  assign srcset_360 = 360 | times: divide_ratio | round | prepend: '360x'
+			  assign srcset_420 = 420 | times: divide_ratio | round | prepend: '420x'
+			  assign srcset_480 = 480 | times: divide_ratio | round | prepend: '480x'
+			  assign srcset_640 = 640 | times: divide_ratio | round | prepend: '640x'
+			  assign srcset_840 = 840 | times: divide_ratio | round | prepend: '840x'
+			  assign srcset_1080 = 1080 | times: divide_ratio | round | prepend: '1080x'
+			  assign srcset_1280 = 1280 | times: divide_ratio | round | prepend: '1280x'
+			  assign srcset_1540 = 1540 | times: divide_ratio | round | prepend: '1540x'
+			  assign srcset_1860 = 1860 | times: divide_ratio | round | prepend: '1860x'
+			  assign srcset_2100 = 2100 | times: divide_ratio | round | prepend: '2100x'
+			-%}
+			{%- capture srcset -%} 
+				{%- if image.width >= 260 -%}{{ image | img_url: srcset_260, crop: 'center' }} 260w{%- endif -%}
+				{%- if image.width >= 320 -%},{{ image | img_url: srcset_320, crop: 'center' }} 320w{%- endif -%}
+				{%- if image.width >= 360 -%},{{ image | img_url: srcset_360, crop: 'center' }} 360w{%- endif -%}
+				{%- if image.width >= 420 -%},{{ image | img_url: srcset_420, crop: 'center' }} 420w{%- endif -%}
+				{%- if image.width >= 480 -%},{{ image | img_url: srcset_480, crop: 'center' }} 480w{%- endif -%}
+				{%- if image.width >= 640 -%},{{ image | img_url: srcset_640, crop: 'center' }} 640w{%- endif -%}
+				{%- if image.width >= 840 -%},{{ image | img_url: srcset_840, crop: 'center' }} 840w{%- endif -%}
+				{%- if image.width >= 1080 -%},{{ image | img_url: srcset_1080, crop: 'center' }} 1080w{%- endif -%}
+				{%- if image.width >= 1280 -%},{{ image | img_url: srcset_1280, crop: 'center' }} 1280w{%- endif -%}
+				{%- if image.width >= 1540 -%},{{ image | img_url: srcset_1540, crop: 'center' }} 1540w{%- endif -%}
+				{%- if image.width >= 1860 -%},{{ image | img_url: srcset_1860, crop: 'center' }} 1860w{%- endif -%}
+				{%- if image.width >= 2100 -%},{{ image | img_url: srcset_2100, crop: 'center' }} 2100w{%- endif -%}
+			{%- endcapture -%}
+		{%- endif -%}
+		<link rel="preload" as="image" href="{{ image | img_url: '480x' }}" imagesrcset="{{ srcset }}" imagesizes="{{ media_sizes }}">
+ 	{%- endfor -%}
+{%- endif -%}
